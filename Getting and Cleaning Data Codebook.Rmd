@@ -1,0 +1,96 @@
+-- Getting and Cleaning Data - Course Project Codebook --
+
+The data presented here is an amalgam of datasets from the "Human Activity Recognition Using Smartphones Dataset,"
+created by Smartlab Non-Linear Complex Systems Laboratory.  For more information on the original datasets and the 
+transformations to the original datasets, please consult the README.md file, and the run_analysis.R script.
+
+-- Data Dictionary --
+
+Notes
+---
+All measurements are normalized and bounded within [-1,1], unless otherwise noted in brackets
+All entries (aside from Subject, Activity) are AVERAGES of all measurements from initial dataset 
+---
+
+Subject - Participant indentifier [1, 30]
+Activity - Description of activity [WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING]
+tBodyAcc-mean()-X - Mean triaxial body acceleration in the x-dimension, time domain
+tBodyAcc-mean()-Y - Mean triaxial body acceleration in the y-dimension, time domain
+tBodyAcc-mean()-Z - Mean triaxial body acceleration in the z-dimension, time domain
+tBodyAcc-std()-X - Standard deviation of triaxial body acceleration in the x-dimension, time domain
+tBodyAcc-std()-Y - Standard deviation of triaxial body acceleration in the y-dimension, time domain
+tBodyAcc-std()-Z - Standard deviation of triaxial body acceleration in the z-dimension, time domain
+tGravityAcc-mean()-X - Mean triaxial gravitational acceleration in the x-dimension, time domain
+tGravityAcc-mean()-Y - Mean triaxial gravitational acceleration in the y-dimension, time domain
+tGravityAcc-mean()-Z - Mean triaxial gravitational acceleration in the z-dimension, time domain
+tGravityAcc-std()-X - Standard deviation of triaxial gravitational acceleration in the x-dimension, time domain
+tGravityAcc-std()-Y - Standard deviation of triaxial gravitational acceleration in the y-dimension, time domain
+tGravityAcc-std()-Z - Standard deviation of triaxial gravitational acceleration in the z-dimension, time domain
+tBodyAccJerk-mean()-X - Mean triaxial jerk [d/dt(acceleration)] in the x-dimension, time domain
+tBodyAccJerk-mean()-Y - Mean triaxial jerk [d/dt(acceleration)] in the y-dimension, time domain
+tBodyAccJerk-mean()-Z - Mean triaxial jerk [d/dt(acceleration)] in the z-dimension, time domain
+tBodyAccJerk-std()-X - Standard deviation of triaxial jerk [d/dt(acceleration)] in the x-dimension, time domain
+tBodyAccJerk-std()-Y - Standard deviation of triaxial jerk [d/dt(acceleration)] in the y-dimension, time domain
+tBodyAccJerk-std()-Z - Standard deviation of triaxial jerk [d/dt(acceleration)] in the z-dimension, time domain
+tBodyGyro-mean()-X - Mean triaxial angular acceleration in the x-dimension, time domain
+tBodyGyro-mean()-Y - Mean triaxial angular acceleration in the y-dimension, time domain
+tBodyGyro-mean()-Z - Mean triaxial angular acceleration in the z-dimension, time domain
+tBodyGyro-std()-X  - Standard deviation of triaxial angular acceleration in the x-dimension, time domain
+tBodyGyro-std()-Y  - Standard deviation of triaxial angular acceleration in the y-dimension, time domain
+tBodyGyro-std()-Z  - Standard deviation of triaxial angular acceleration in the z-dimension, time domain
+tBodyGyroJerk-mean()-X - Mean triaxial angular jerk [d/dt(acceleration)] in the x-dimension, time domain
+tBodyGyroJerk-mean()-Y - Mean triaxial angular jerk [d/dt(acceleration)] in the y-dimension, time domain
+tBodyGyroJerk-mean()-Z - Mean triaxial angular jerk [d/dt(acceleration)] in the z-dimension, time domain
+tBodyGyroJerk-std()-X - Standard deviation of triaxial angular jerk [d/dt(acceleration)] in the x-dimension, time domain
+tBodyGyroJerk-std()-Y - Standard deviation of triaxial angular jerk [d/dt(acceleration)] in the y-dimension, time domain
+tBodyGyroJerk-std()-Z - Standard deviation of triaxial angular jerk [d/dt(acceleration)] in the z-dimension, time domain
+tBodyAccMag-mean() - Mean magnitude of triaxial acceleration, time domain
+tBodyAccMag-std() - Standard deviation of magnitude of triaxial acceleration, time domain
+tGravityAccMag-mean() - Mean magnitude of gravitational triaxial acceleration, time domain
+tGravityAccMag-std() - Standard deviation of magnitude of triaxial gravitational acceleration, time domain
+tBodyAccJerkMag-mean() - Mean magnitude of triaxial jerk [d/dt(acceleration)], time domain
+tBodyAccJerkMag-std() - Standard deviation of magnitude of triaxial jerk [d/dt(acceleration)], time domain
+tBodyGyroMag-mean() - Mean magnitude of triaxial angular acceleration, time domain
+tBodyGyroMag-std() - Standard deviation of magnitude of triaxial angular acceleration, time domain
+tBodyGyroJerkMag-mean() - Mean magnitude of triaxial angular jerk [d/dt(acceleration)], time domain
+tBodyGyroJerkMag-std() - Standard deviation of magnitude of triaxial angular jerk [d/dt(acceleration)], time domain
+fBodyAcc-mean()-X - Mean triaxial body acceleration in the x-dimension, frequency domain
+fBodyAcc-mean()-Y - Mean triaxial body acceleration in the y-dimension, frequency domain
+fBodyAcc-mean()-Z - Mean triaxial body acceleration in the z-dimension, frequency domain
+fBodyAcc-std()-X - Standard deviation of triaxial body acceleration in the x-dimension, frequency domain
+fBodyAcc-std()-Y - Standard deviation of triaxial body acceleration in the y-dimension, frequency domain
+fBodyAcc-std()-Z - Standard deviation of triaxial body acceleration in the z-dimension, frequency domain
+fGravityAcc-mean()-X - Mean triaxial gravitational acceleration in the x-dimension, frequency domain
+fGravityAcc-mean()-Y - Mean triaxial gravitational acceleration in the y-dimension, frequency domain
+fGravityAcc-mean()-Z - Mean triaxial gravitational acceleration in the z-dimension, frequency domain
+fGravityAcc-std()-X - Standard deviation of triaxial gravitational acceleration in the x-dimension, frequency domain
+fGravityAcc-std()-Y - Standard deviation of triaxial gravitational acceleration in the y-dimension, frequency domain
+fGravityAcc-std()-Z - Standard deviation of triaxial gravitational acceleration in the z-dimension, frequency domain
+fBodyAccJerk-mean()-X - Mean triaxial jerk [d/dt(acceleration)] in the x-dimension, frequency domain
+fBodyAccJerk-mean()-Y - Mean triaxial jerk [d/dt(acceleration)] in the y-dimension, frequency domain
+fBodyAccJerk-mean()-Z - Mean triaxial jerk [d/dt(acceleration)] in the z-dimension, frequency domain
+fBodyAccJerk-std()-X - Standard deviation of triaxial jerk [d/dt(acceleration)] in the x-dimension, frequency domain
+fBodyAccJerk-std()-Y - Standard deviation of triaxial jerk [d/dt(acceleration)] in the y-dimension, frequency domain
+fBodyAccJerk-std()-Z - Standard deviation of triaxial jerk [d/dt(acceleration)] in the z-dimension, frequency domain
+fBodyGyro-mean()-X - Mean triaxial angular acceleration in the x-dimension, frequency domain
+fBodyGyro-mean()-Y - Mean triaxial angular acceleration in the y-dimension, frequency domain
+fBodyGyro-mean()-Z - Mean triaxial angular acceleration in the z-dimension, frequency domain
+fBodyGyro-std()-X  - Standard deviation of triaxial angular acceleration in the x-dimension, frequency domain
+fBodyGyro-std()-Y  - Standard deviation of triaxial angular acceleration in the y-dimension, frequency domain
+fBodyGyro-std()-Z  - Standard deviation of triaxial angular acceleration in the z-dimension, frequency domain
+fBodyGyroJerk-mean()-X - Mean triaxial angular jerk [d/dt(acceleration)] in the x-dimension, frequency domain
+fBodyGyroJerk-mean()-Y - Mean triaxial angular jerk [d/dt(acceleration)] in the y-dimension, frequency domain
+fBodyGyroJerk-mean()-Z - Mean triaxial angular jerk [d/dt(acceleration)] in the z-dimension, frequency domain
+fBodyGyroJerk-std()-X - Standard deviation of triaxial angular jerk [d/dt(acceleration)] in the x-dimension, frequency domain
+fBodyGyroJerk-std()-Y - Standard deviation of triaxial angular jerk [d/dt(acceleration)] in the y-dimension, frequency domain
+fBodyGyroJerk-std()-Z - Standard deviation of triaxial angular jerk [d/dt(acceleration)] in the z-dimension, frequency domain
+fBodyAccMag-mean() - Mean magnitude of triaxial acceleration, frequency domain
+fBodyAccMag-std() - Standard deviation of magnitude of triaxial acceleration, frequency domain
+fGravityAccMag-mean() - Mean magnitude of gravitational triaxial acceleration, frequency domain
+fGravityAccMag-std() - Standard deviation of magnitude of triaxial gravitational acceleration, frequency domain
+fBodyAccJerkMag-mean() - Mean magnitude of triaxial jerk [d/dt(acceleration)], frequency domain
+fBodyAccJerkMag-std() - Standard deviation of magnitude of triaxial jerk [d/dt(acceleration)], frequency domain
+fBodyGyroMag-mean() - Mean magnitude of triaxial angular acceleration, frequency domain
+fBodyGyroMag-std() - Standard deviation of magnitude of triaxial angular acceleration, frequency domain
+fBodyGyroJerkMag-mean() - Mean magnitude of triaxial angular jerk [d/dt(acceleration)], frequency domain
+fBodyGyroJerkMag-std() - Standard deviation of magnitude of triaxial angular jerk [d/dt(acceleration)], frequency domain

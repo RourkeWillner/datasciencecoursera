@@ -1,0 +1,46 @@
+-- Getting and Cleaning Data - Course Project README --
+
+---
+Background
+---
+
+The run_analysis.R script operates on text files of data gathered by the Smartlab Non-Linear Complex Systems Laboratory.
+The original dataset contained sensor signals (accelerometer and gyroscope), recorded from 30 volunteers performing six
+different activities.
+
+The run_analysis.R script combines the component parts of the aformentioned dataset, and extracts only the measurements 
+on the mean and standard deviation for each measurement (this is taken to mean measurements that include "-mean()" or 
+"-std()" in their title).  This dataset is then saved as a tab-delimited text file called "DataSet1.txt," in the working
+directory.
+
+The run_analysis.R script then creates a second dataset, independent tidy data set with the average of each variable 
+for each activity and each subject. This dataset is then printed to the console, and saved as a tab-delimited text file 
+called "DataSet2.txt," in the working directory.
+
+An explanation of the measurement names can be found in "Getting and Cleaning Data Codebook.md"
+
+---
+Running the run_analysis.R Script
+---
+
+- Ensure the following files are in the working directory:
+  - 'features.txt'
+  - 'activity_labels.txt'
+  - 'X_train.txt'
+  - 'y_train.txt'
+  - 'subject_train.txt'
+  - 'X_test.txt'
+  - 'y_test.txt'
+  - 'subject_test.txt'
+  
+---
+The Output
+---
+
+The output of the run_analysis.R script is two tab-delimited text files.  These can be opened in a text editor or Microsoft
+Excel, among other programs.  Depending on which text editor is used, the data may not appear in straight columns.
+
+In order to read the file into an R editor, put the file in R's working directory and enter:
+
+read.table("filename.txt", header=TRUE)
+  
